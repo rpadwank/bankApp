@@ -13,7 +13,7 @@ public abstract class BankAccount implements BankSpecification {
 	private static String bankName;
 	
 	public BankAccount() {
-		this.accId = ++accIdGenerator;
+		this.accId = accIdGenerator+1;
 	}
 
 	public BankAccount(String accHolderName, String accType, double balance) {
